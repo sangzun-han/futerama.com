@@ -1,4 +1,4 @@
-export interface Futurama {
+export interface InfoData {
   synopsis: string;
   yearsAired: string;
   creators: [

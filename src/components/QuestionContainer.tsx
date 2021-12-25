@@ -1,3 +1,4 @@
+import styled from "@emotion/styled";
 import { Error, Loading } from "../components";
 import { useFuturamaData } from "../hooks/useFuturama";
 import { QuestionData } from "../types/questions";
@@ -10,6 +11,10 @@ export const QuestionContainer = () => {
 
   return (
     <div>
+      <Title>
+        <h1>Futurama Quiz!</h1>
+        <h2>Question</h2>
+      </Title>
       {data.map((question: QuestionData) => {
         return (
           <QuestionCard
@@ -21,3 +26,9 @@ export const QuestionContainer = () => {
     </div>
   );
 };
+
+const Title = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;

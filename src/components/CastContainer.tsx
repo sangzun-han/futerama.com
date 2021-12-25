@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { Error, Loading } from "../components";
 import { useFuturamaData } from "../hooks/useFuturama";
 import { CastData } from "../types/cast";
-import { CastCard } from "./castCard";
+import { CastCard } from "./CastCard";
 
 interface CastDataProps {
   name: string;

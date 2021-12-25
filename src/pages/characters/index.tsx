@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
-import { CharacterCardContainer } from "../../components/CharacterCardContainer";
+import { CharacterContainer } from "../../components/CharacterContainer";
 const CharacterIndexPage: NextPage = () => {
   const name = "characters";
   return (
     <div>
-      <CharacterCardContainer name={name} />
+      <CharacterContainer name={name} />
     </div>
   );
 };

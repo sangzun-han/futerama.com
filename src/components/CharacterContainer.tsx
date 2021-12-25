@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styled from "@emotion/styled";
-import { Error, Loading } from "../components";
+import { Error, Loading } from ".";
 import { CharacterCard } from "./CharacterCard";
 import { CharacterData } from "../types/characters";
 import { useFuturamaData } from "../hooks/useFuturama";
@@ -9,7 +9,7 @@ interface CharacterDataProps {
   name: string;
 }
 
-export const CharacterCardContainer = ({ name }: CharacterDataProps) => {
+export const CharacterContainer = ({ name }: CharacterDataProps) => {
   const { data, error } = useFuturamaData(name);
 
   if (error) return <Error />;

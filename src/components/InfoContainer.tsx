@@ -3,8 +3,11 @@ import { InfoData } from "../types/infoData";
 import { Error, Loading } from "../components";
 import styled from "@emotion/styled";
 
-export const InfoContainer = () => {
-  const name = "info";
+interface InfoDataProps {
+  name: string;
+}
+
+export const InfoContainer = ({ name }: InfoDataProps) => {
   const { data, error } = useFuturamaData(name);
 
   if (error) return <Error />;

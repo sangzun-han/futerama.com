@@ -5,8 +5,11 @@ import { CharacterCard } from "./CharacterCard";
 import { CharacterData } from "../types/characters";
 import { useFuturamaData } from "../hooks/useFuturama";
 
-export const CharacterCardContainer = () => {
-  const name = "characters";
+interface CharacterDataProps {
+  name: string;
+}
+
+export const CharacterCardContainer = ({ name }: CharacterDataProps) => {
   const { data, error } = useFuturamaData(name);
 
   if (error) return <Error />;

@@ -15,14 +15,14 @@ export const CastContainer = ({ name }: CastDataProps) => {
   if (!data) return <Loading />;
 
   return (
-    <CardContainer>
+    <Container>
       {data.map((cast: CastData) => {
         return <CastCard key={`cast-data-${cast.id}`} castData={cast} />;
       })}
-    </CardContainer>
+    </Container>
   );
 };
-const CardContainer = styled.section`
+const Container = styled.section`
   padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);

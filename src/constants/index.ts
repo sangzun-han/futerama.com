@@ -62,3 +62,36 @@ export const CAST_IMG = [
     url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTJzMQ6KoUI_YXLTGuatkcT48yBjJEZocZaOzdGZeWTy8cc6dr0",
   },
 ];
+
+export const ROUTES = [
+  {
+    ID: 0,
+    PATH: "/info",
+    LABEL: "INFO",
+  },
+  {
+    ID: 1,
+    PATH: "/characters",
+    LABEL: "CHARACTER",
+  },
+  {
+    ID: 2,
+    PATH: "/cast",
+    LABEL: "CAST",
+  },
+  {
+    ID: 3,
+    PATH: "/episodes",
+    LABEL: "EPISODE",
+  },
+  {
+    ID: 4,
+    PATH: "/questions",
+    LABEL: "QUESTION",
+  },
+  {
+    ID: 5,
+    PATH: "/inventory",
+    LABEL: "INVENTORY",
+  },
+];

@@ -4,8 +4,11 @@ import { useFuturamaData } from "../hooks/useFuturama";
 import { QuestionData } from "../types/questions";
 import { QuestionCard } from "./QuestionCard";
 
-export const QuestionContainer = () => {
-  const { data, error } = useFuturamaData("questions");
+interface QuestionDataProps {
+  name: string;
+}
+export const QuestionContainer = ({ name }: QuestionDataProps) => {
+  const { data, error } = useFuturamaData(name);
   if (error) return <Error />;
   if (!data) return <Loading />;
 

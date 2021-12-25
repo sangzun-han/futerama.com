@@ -24,9 +24,6 @@ export const InfoSynopsis = ({ infoData }: InfoDataProps) => {
   );
 };
 
-const H1 = styled.h1`
-  margin-right: 0.5rem;
-`;
 const Info = styled.div`
   display: flex;
   align-items: baseline;
@@ -34,6 +31,10 @@ const Info = styled.div`
   @media screen and (max-width: 420px) {
     flex-direction: column;
   }
+`;
+
+const H1 = styled.h1`
+  margin-right: 0.5rem;
 `;
 
 const Text = styled.span`

@@ -31,15 +31,20 @@ export const InventoryContainer = ({ name }: InventoryDataProps) => {
       {data.map((inventory: InventoryData) => {
         if (random == inventory.id)
           return (
-            <Item>
-              <ItemInfoCard>
+            <Item key={`inventory-item-${inventory.id}`}>
+              <ItemInfoCard key={`inventory-iteminfo-${inventory.id}`}>
                 <h2>{inventory.title}</h2>
                 <p>{inventory.slogan}</p>
                 <br />
                 <h4>${inventory.price}</h4>
-                <RandomButton onClick={handleRandom}>RANDOM</RandomButton>
+                <RandomButton
+                  key={`inventory-button-${inventory.id}`}
+                  onClick={handleRandom}
+                >
+                  RANDOM
+                </RandomButton>
               </ItemInfoCard>
-              <PriceCard>
+              <PriceCard key={`inventory-price-${inventory.id}`}>
                 <h2>DESCRIPTION</h2>
                 <p>{inventory.description}</p>
               </PriceCard>

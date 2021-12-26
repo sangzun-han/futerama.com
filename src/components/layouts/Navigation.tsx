@@ -21,11 +21,9 @@ export const Navigation = () => {
       </Burger>
       {ROUTES.map((routeObject: ROUTE) => {
         return (
-          <div>
-            <Link key={`navbar-${routeObject.ID}`} href={routeObject.PATH}>
-              <Item>{routeObject.LABEL}</Item>
-            </Link>
-          </div>
+          <Link key={`navbar-${routeObject.ID}`} href={routeObject.PATH}>
+            <Item>{routeObject.LABEL}</Item>
+          </Link>
         );
       })}
     </Header>

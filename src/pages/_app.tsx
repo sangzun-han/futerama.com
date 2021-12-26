@@ -6,9 +6,6 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <Layout>
-      <Head>
-        <title>Futurama</title>
-      </Head>
       <Component {...pageProps} />
     </Layout>
   );

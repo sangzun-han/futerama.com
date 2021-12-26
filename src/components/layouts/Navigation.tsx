@@ -35,7 +35,7 @@ export const Navigation = () => {
 const Item = styled.li`
   list-style: none;
   font-size: 20px;
-
+  cursor: pointer;
   @media screen and (max-width: 1280px) {
     display: none;
   }
